@@ -16,17 +16,22 @@ Aspiring **Data Scientist** with a strong passion for **data-driven problem solv
 
 ## Projects  
 
-### I. [Breast Cancer Detection using Random Forest](https://github.com/CrossAnushka/breast-cancer-detection)  
+### I. [Image Classification with Artificial Neural Networks (ANN)]
+- Built an image classification model in TensorFlow/Keras on the Fashion-MNIST dataset to classify grayscale images into 10 apparel categories.
+- Preprocessed data through normalization and train/validation/test splitting, then trained a Keras Sequential neural network with ReLU, softmax, Adam, and sparse categorical cross-entropy.
+- Evaluated performance using test predictions, confusion matrix. Visualized training/validation accuracy and loss with Matplotlib and Seaborn.
+
+### II. [Breast Cancer Detection using Random Forest](https://github.com/CrossAnushka/breast-cancer-detection)  
 - Built a predictive model using the **UCI Breast Cancer dataset**.  
 - Benchmarked Random Forest against other classifiers, achieving strong accuracy and recall.  
 - Engineered preprocessing, scaling, model training, and cross-validation.  
 
-### II. [SONAR: Rock vs Mine Prediction](https://github.com/CrossAnushka/SONAR--rock-vs-mine-prediction-model)  
+### III. [SONAR: Rock vs Mine Prediction](https://github.com/CrossAnushka/SONAR--rock-vs-mine-prediction-model)  
 - Implemented a binary classifier to distinguish **rock vs mine signals**.  
 - Explored Random Forest performance, optimized preprocessing and evaluation pipeline.  
 - Compared results with accuracy metrics and confusion matrices.  
 
-### III. [Handwritten Digit Recognition](https://github.com/CrossAnushka/handwritten-digit-recognition)  
+### IV. [Handwritten Digit Recognition](https://github.com/CrossAnushka/handwritten-digit-recognition)  
 - Designed supervised ML models (SVM, KNN) for digit classification.  
 - Preprocessed and split dataset, analyzed results with confusion matrices.  
 - Achieved high generalization with **SVM (RBF kernel)**.  
