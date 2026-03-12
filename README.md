@@ -16,7 +16,7 @@ Aspiring **Data Scientist** with a strong passion for **data-driven problem solv
 
 ## Projects  
 
-### I. [Image Classification with Artificial Neural Networks (ANN)]
+### I. [Image Classification with Artificial Neural Networks (ANN)] (https://github.com/CrossAnushka/Image-Classification-using-ANN)
 - Built an image classification model in TensorFlow/Keras on the Fashion-MNIST dataset to classify grayscale images into 10 apparel categories.
 - Preprocessed data through normalization and train/validation/test splitting, then trained a Keras Sequential neural network with ReLU, softmax, Adam, and sparse categorical cross-entropy.
 - Evaluated performance using test predictions, confusion matrix. Visualized training/validation accuracy and loss with Matplotlib and Seaborn.
