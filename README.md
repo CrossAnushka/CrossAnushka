@@ -8,9 +8,9 @@ Aspiring **Data Scientist** with a strong passion for **data-driven problem solv
 
 
 ##  Technical Skills  
-- **Programming:** Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), C++, C  
-- **Tools:** Jupyter Notebook, Google Colab  
-- **Concepts:** Supervised & Unsupervised ML, Deep Learning (ANN, CNN, RNN, LSTM), Computer Vision, NLP  
+- **Programming:** Python ecosystem for data analysis & ML (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn); Deep Learning (TensorFlow, Keras, Hugging Face Transformers)  
+- **Tools:** Jupyter Notebook, Google Colab, Git & GitHub, MySQL 
+- **Concepts:** Supervised ML (Regression, Classification), Unsupervised ML, Deep Learning (ANN, CNN, RNN, LSTM), Computer Vision, NLP (Transformers) 
 
 
 
