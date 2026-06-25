@@ -25,11 +25,11 @@ Aspiring **Data Scientist** with a strong passion for **data-driven problem solv
 - Ran controlled experiments across lookback windows, signal components, and earnings-tone surprises (QoQ deltas), building long-only stock-picking and decision-ledger tooling with outcome grading.
 - Rigorously validated each candidate signal, concluding that the news-sentiment edge did not survive out-of-sample testing, while flagging earnings-tone surprise as the strongest remaining candidate pending live forward data.
 
-### II. [Bank Customer Churn Prediction with ANN](https://github.com/CrossAnushka/bank-customer-churn-ann)
+### II. [Bank Customer Churn Prediction (ANN vs. Gradient Boosting)](https://github.com/CrossAnushka/bank-customer-churn-ann)
 
-- Built an Artificial Neural Network in **TensorFlow/Keras** to predict bank customer churn from 10,000 customer records, achieving **~86% test accuracy**.
-- Engineered 22 features (balance-to-salary and tenure-to-age ratios, churn flags, age bins) with one-hot encoding and standardized scaling.
-- Trained a Sequential network with ReLU, dropout, Adam, and early stopping; evaluated using a confusion matrix and accuracy/loss curves.
+- Reframed churn on 10,000 records (~20% positive) as an imbalanced-classification problem, optimizing PR-AUC and recall over accuracy; engineered 25 features (ratio, flag, interaction, and binned terms), with 8 ranking in the top-20 importances led by a products×activity interaction.
+- Benchmarked a Keras ANN against XGBoost under stratified 5-fold CV — trees won on every metric (PR-AUC 0.71 vs 0.67, ROC-AUC 0.87 vs 0.85).
+- Tuned the decision threshold to a retention-cost model, lifting churn recall from 44% to 71%, and showed class weighting only slides the operating point along a fixed precision-recall frontier.
 
 ### III. [Image Classification with Artificial Neural Networks (ANN)](https://github.com/CrossAnushka/Image-Classification-using-ANN)
 - Built an image classification model in TensorFlow/Keras on the Fashion-MNIST dataset to classify grayscale images into 10 apparel categories.
