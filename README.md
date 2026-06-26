@@ -20,10 +20,10 @@ Aspiring **Data Scientist** with a strong passion for **data-driven problem solv
 
 ### I. [Nifty 50 News & Earnings Sentiment Signal Research](https://github.com/CrossAnushka/sentiment-analysis)
 
-- Built an end-to-end Python research pipeline that scores financial news and earnings-call transcripts for the Nifty 50 universe using FinBERT, then tests whether the resulting sentiment predicts forward stock returns.
-- Engineered a daily snapshot harness with forward-return backtesting, information-coefficient (IC) analysis, and strict out-of-sample/holdout gates to guard against overfitting and multiple-testing bias.
-- Ran controlled experiments across lookback windows, signal components, and earnings-tone surprises (QoQ deltas), building long-only stock-picking and decision-ledger tooling with outcome grading.
-- Rigorously validated each candidate signal, concluding that the news-sentiment edge did not survive out-of-sample testing, while flagging earnings-tone surprise as the strongest remaining candidate pending live forward data.
+- Built an end-to-end Python research pipeline that scores financial news and earnings-call transcripts for the Nifty 50 universe using FinBERT and a Loughran–McDonald finance lexicon, then rigorously tests whether the resulting sentiment predicts forward stock returns.
+- Engineered a production-grade daily harness — fetch → score → snapshot → backtest — backed by a versioned SQLite store with dual CSV/DB writes. Implemented a "score once, re-weight many" architecture where the expensive transformer pass runs once and all downstream parameter sweeps derive from stored raw probabilities, making cross-sectional sensitivity analysis tractable across the full 50-stock universe.
+- Built and validated multiple signal variants: cross-sectional news sentiment (IC +0.05, p≈0.13 over 11 biweekly windows), earnings-tone QoQ surprise (in-sample IC +0.17 at 20-day horizon, p≈0.02), and a long-only pick engine with human-readable decision cards and realized-outcome grading. Applied strict out-of-sample and information-barrier gates throughout — the leakage-free evaluation harness asserts no post-cutoff data reaches the model.
+- No signal clears the bar for a tradeable edge. News sentiment does not beat a price-momentum baseline; earnings-tone surprise inflates ~70% train→test with the long-short spread flipping negative on held-out quarters. The primary contribution is a falsification harness that can cleanly kill a bad signal — earnings-tone surprise remains the strongest candidate pending live forward quarters.
 
 ### II. [Bank Customer Churn Prediction (ANN vs. Gradient Boosting)](https://github.com/CrossAnushka/bank-customer-churn-ann)
 
